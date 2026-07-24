@@ -47,11 +47,11 @@ I created an AWS EC2 instance using Ubuntu Server 22.04 LTS. The instance type I
 
 > SSH (port 22) - Allow only from my IP
 
-I connected to the instance using SSH - (ssh -i "mykey.pem" ubuntu@3.94.166.22)
+I connected to the instance using SSH - (ssh -i "ICT171key.pem" ubuntu@3.94.166.22)
 
 4. Apache Web Server Setup
 
-After connecting to my EC2 instance, I updated my server's package list using sudo apt update. I then installed the Apache2 web server using sudo apt install apache2 -y. Here, Apache automatically created the default web directory (/var/www/html). I replaced the default index.html file with my custom Travel Blog website using (cd /var/www/html) and (sudo nano index.html). After editing, I restarted Apache by running (sudo systemctl restart apache2). This allowed my custom website (Ann's Travel Tips and Guides) to load successfully from both the EC2 public IP address and my domain name.
+After connecting to my EC2 instance, I updated my server's package list using sudo apt update. I then installed the Apache2 web server using (sudo apt install apache2 -y). Here, Apache automatically created the default web directory (/var/www/html). I replaced the default index.html file with my custom Travel Blog website using (cd /var/www/html) and (sudo nano index.html). After editing, I restarted Apache by running (sudo systemctl restart apache2). This allowed my custom website (Ann's Travel Tips and Guides) to load successfully from both the EC2 public IP address and my domain name.
 
 
 5. For this project, I used the following commands;
@@ -72,33 +72,28 @@ After connecting to my EC2 instance, I updated my server's package list using su
 
 > sudo systemctl restart apache2: After updating my website, I restarted Apache so that the different changes I made would show up when I refreshed the page.
 
-6. Website Files:
+6. Website Files :My website HTML file is stored in the website folder.
 
-My website HTML file is stored in- /website/index.html
-
-7. Script:
-
-I have stored my script in: /script/myscript.sh
+7. Script: My script is stored in my script folder.
 
 This script updates the server, installs Apache, and restarts the service. 
 
 The Script Contents;
 
-#!/bin/bash
-# Update the server package list
+#!/bin/bash 
 
-sudo apt update -y
-# Install the Apache web server
+sudo apt update -y: to update the server package list
 
-sudo apt install apache2 -y
-sudo systemctl restart apache2
-# Restart Apache to make sure it is running
+sudo apt install apache2 -y: to install the Appache web server 
+
+sudo systemctl restart apache2: Restart Apache to make sure it is running
 
 MY SCRIPT VERIFICATION:
 
 This script automates the setup of an Apache web server.
 
 It updates the server’s package list, installs Apache2, and restarts the service to ensure it is running. This allows the EC2 instance to serve web content immediately after execution.
+
 To verify that my script works correctly, I ran (bash /script/myscript.sh). This confirmed that the server package list was updated, Apache2 was installed and that the Apache service was restarted and running.
 
 I verified this using (sudo systemctl status apache2). This confirmed that the script had been executed successfully.
@@ -161,7 +156,5 @@ Both URLs successfully loaded my website, confirming correct DNS configuration.
 
 > How DNS records map domains to servers
 
-9. Screenshots:
-
-My screenshots will be stored in- /screenshots folder/
+9. Screenshots: My screenshots will be stored in the screenshots folder.
 
