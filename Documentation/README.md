@@ -5,9 +5,13 @@ Unit: I71 Cloud Server Project
 
 Website and Server Information
 [My EC2 Public IP](http://3.94.166.22)
+
 [annproject171.store](http://annproject171.store)
+
 [www.annproject171.store](http://www.annproject171.store)
+
 [GitHub Repository](https://github.com/AnnNkurunziza/ICT171-Cloud-Server-Project)
+
 [Video Explainer](https://murdochuniversity-my.sharepoint.com/:v:/r/personal/35802025_student_murdoch_edu_au/Documents/ICT171%20video%20explanation.mp4?csf=1&web=1&e=TfcXbm)
 
 1. Project Overview
