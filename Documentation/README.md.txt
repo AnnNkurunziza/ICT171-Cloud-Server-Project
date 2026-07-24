@@ -1,13 +1,14 @@
+ICT171 Cloud Server Project
 Student Name: Nkurunziza Ann Nyirahabwa
 Student Number: 35802025
 Unit: I71 Cloud Server Project
 
-MY WEBSITE IP ADDRESS AND DNS ENTRY
+Website and Server Information
 
-> EC2 Public IP - http://3.94.166.32
-> Domain - annproject171.store
-> WWW Domain - www.annproject171.store
-
+> [EC2 Public IP](http://3.94.166.22)
+> [annproject171.store](http://annproject171.store)
+> [www.annproject171.store](http://www.annproject171.store)
+> [GitHub Repository](https://github.com/AnnNkurunziza/ICT171-Cloud-Server-Project)
 
 1. Project Overview
 This project implements a cloud-hosted web server running on an AWS EC2 instance.
