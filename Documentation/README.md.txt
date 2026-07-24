@@ -10,6 +10,13 @@ Website and Server Information
 [GitHub Repository](https://github.com/AnnNkurunziza/ICT171-Cloud-Server-Project)
 [Video Explainer](https://murdochuniversity-my.sharepoint.com/:v:/r/personal/35802025_student_murdoch_edu_au/Documents/ICT171%20video%20explanation.mp4?csf=1&web=1&e=TfcXbm)
 
+## Website & Server Information
+
+**EC2 Public IP:** [http://3.94.166.22](http://3.94.166.22)  
+**Domain:** [annproject171.store](http://annproject171.store)  
+**WWW Domain:** [www.annproject171.store](http://www.annproject171.store)  
+**Video Explainer:** [Click here to watch the video](PASTE-YOUR-ONEDRIVE-LINK-HERE)  
+**GitHub Repository:** [https://github.com/AnnNkurunziza/ICT171-Cloud-Server-Project](https://github.com/AnnNkurunziza/ICT171-Cloud-Server-Project)
 
 1. Project Overview
 This project implements a cloud-hosted web server running on an AWS EC2 instance.
