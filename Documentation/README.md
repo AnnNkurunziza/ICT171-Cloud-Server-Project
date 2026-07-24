@@ -1,9 +1,13 @@
 ICT171 Cloud Server Project
+
 Student Name: Nkurunziza Ann Nyirahabwa
+
 Student Number: 35802025
+
 Unit: I71 Cloud Server Project
 
 Website and Server Information
+
 [My EC2 Public IP](http://3.94.166.22)
 
 [annproject171.store](http://annproject171.store)
@@ -15,29 +19,42 @@ Website and Server Information
 [Video Explainer](https://murdochuniversity-my.sharepoint.com/:v:/r/personal/35802025_student_murdoch_edu_au/Documents/ICT171%20video%20explanation.mp4?csf=1&web=1&e=TfcXbm)
 
 1. Project Overview
+ 
 This project implements a cloud-hosted web server running on an AWS EC2 instance.
 The server hosts a custom-built HTML website titled Ann’s Travel Tips and Guides, which provides practical travel advice on budgeting, packing, safety, and destination preparation.
 
-2. What This Project Demonstrates:
+3. What This Project Demonstrates:
+
 This project demonstrates;
+
 > Cloud server deployment using IaaS
+
 > Linux command-line configuration
+
 > Apache2 web server setup on Ubuntu
+
 > GitHub documentation
+
 > Shell scripting
+
 > DNS configuration
 
 3. EC2 Set up
+
 I created an AWS EC2 instance using Ubuntu Server 22.04 LTS. The instance type I used was t3.micro. While in my EC2 instance, I configured the following inbound security group rules;
+
 > HTTP (port 80) - Allow from anywhere
+
 > SSH (port 22) - Allow only from my IP
+
 I connected to the instance using SSH - (ssh -i "mykey.pem" ubuntu@3.94.166.22)
 
 4. Apache Web Server Setup
+
 After connecting to my EC2 instance, I updated my server's package list using sudo apt update. I then installed the Apache2 web server using sudo apt install apache2 -y. Here, Apache automatically created the default web directory (/var/www/html). I replaced the default index.html file with my custom Travel Blog website using (cd /var/www/html) and (sudo nano index.html). After editing, I restarted Apache by running (sudo systemctl restart apache2). This allowed my custom website (Ann's Travel Tips and Guides) to load successfully from both the EC2 public IP address and my domain name.
 
 
-5. For this project, I used the following commands;
+6. For this project, I used the following commands;
 > sudo apt update: I ran this to refresh the server’s package list, so it knows what software is available.
 > sudo apt install apache2 -y: I ran this to install the Apache web server(Ubuntu). 
 > sudo systemctl status apache2: I ran this to check the Apache status
